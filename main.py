@@ -1,5 +1,5 @@
 from time import sleep
-from game import main_game as game
+from functions import main_game as game
 
 #기본
 print("게임을 시작합니다")
