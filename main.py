@@ -7,7 +7,8 @@ user = input("USER네임을 입력하세요: ")
 
 sleep(1)
 
-ask_for_i = input("게임을 플레이 하는 법을 보려면 i 를 클릭해 주세요, 바로 시작할려면 s 를 눌러주세요: ")
+ask_for_i = input("게임을 플레이 하는 법을 보려면 i 를 클릭해 주세요, 바로 시작할려면 s 를 눌러주세요 경고: i 와 s 만 입력하시오: ")
+
 
 if ask_for_i == "i":
     sleep(1)
