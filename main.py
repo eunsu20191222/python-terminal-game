@@ -12,6 +12,11 @@ ask_for_i = input("게임을 플레이 하는 법을 보려면 i 를 클릭해 �
 if ask_for_i == "i":
     sleep(1)
     print("\nthis is instroduction")
+    sleep(0.5)
+    f = open('instroduction.txt', 'r')
+    introduction = f.read()
+    f.close()
+    print(introduction)
     sleep(3)
     game(user)
 
