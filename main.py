@@ -1,5 +1,5 @@
 from time import sleep
-from functions import main_game as game
+from functions start as game
 import os
 def clear():
     return os.system("clear")
