@@ -1,5 +1,5 @@
 from time import sleep
-from functions start as game
+import functions
 import os
 def clear():
     return os.system("clear")
@@ -22,7 +22,7 @@ if ask_for_i == "i":
     print(introduction)
     sleep(3)
     clear()
-    game(user)
+    function.start(user)
     sleep(4)
 
 elif ask_for_i == "s":
@@ -30,4 +30,4 @@ elif ask_for_i == "s":
     print("start game")
     sleep(2)
     clear()
-    game(user)
+    function.start(user)
