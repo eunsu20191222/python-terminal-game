@@ -1,6 +1,7 @@
 from time import sleep
 import functions
 import os
+
 def clear():
     return os.system("clear")
 #기본
