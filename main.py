@@ -30,7 +30,7 @@ if ask_for_i == "i":
 elif ask_for_i == "s":
     sleep(1)
     print("start game")
-    sleep(2)
+    sleep(4)
     clear()
     functions.start(user)
     while True:
