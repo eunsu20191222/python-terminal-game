@@ -24,7 +24,8 @@ if ask_for_i == "i":
     sleep(3)
     clear()
     functions.start(user)
-    functions.game()
+    while True:
+        functions.game()
 
 elif ask_for_i == "s":
     sleep(1)
@@ -32,4 +33,5 @@ elif ask_for_i == "s":
     sleep(2)
     clear()
     functions.start(user)
-    functions.game()
+    while True:
+        functions.game()
