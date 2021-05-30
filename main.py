@@ -14,7 +14,7 @@ ask_for_i = input("게임을 플레이 하는 법을 보려면 i 를 클릭해 �
 
 if ask_for_i == "i":
     sleep(1)
-    print("\nthis is instrodu ction")
+    print("\nthis is instroduction")
     sleep(0.5)
     f = open('instroduction.txt', 'r')
     introduction = f.read()
@@ -22,7 +22,7 @@ if ask_for_i == "i":
     print(introduction)
     sleep(3)
     clear()
-    function.start(user)
+    functions.start(user)
     sleep(4)
 
 elif ask_for_i == "s":
@@ -30,4 +30,4 @@ elif ask_for_i == "s":
     print("start game")
     sleep(2)
     clear()
-    function.start(user)
+    functions.start(user)
