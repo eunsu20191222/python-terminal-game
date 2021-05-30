@@ -6,12 +6,13 @@ def start(name):
     print(f"{name}님 환영합니다!!!")
 
 
-def game():
+def game(user):
     farm = 1
     mmoney = 0
     while True:
         mmoney += 100
         money = mmoney
+        print(f"{user}님의 자산")
         print(f"농장: {farm}")
         print(f"돈: {money}")
         time.sleep(1)
