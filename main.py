@@ -35,3 +35,4 @@ elif ask_for_i == "s":
     functions.start(user)
     while True:
         functions.game(user)
+        
