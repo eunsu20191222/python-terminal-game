@@ -15,6 +15,10 @@ def game(user):
         print(f"{user}님의 자산")
         print(f"농장: {farm}")
         print(f"돈: {money}")
+        print("농장: 100원")
+        if money == 100:
+            farm + 1
+            money - 1
         time.sleep(1)
         os.system("clear")
 
