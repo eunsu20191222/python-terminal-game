@@ -8,6 +8,18 @@ def clear():
 print("게임을 시작합니다")
 user = input("USER네임을 입력하세요: ")
 
+def asks(ask):
+    if ask == "m":
+        print("현재 자산")
+        f = open("money.txt")
+        read = f.read()
+        f.close()
+        print(read)
+        sleep(2)
+        clear()
+        functions.start(user)
+
+
 sleep(1)
 
 ask_for_i = input("게임을 플레이 하는 법을 보려면 i 를 클릭해 주세요, 바로 시작할려면 s 를 눌러주세요 경고: i 와 s 만 입력하시오: ")
@@ -25,7 +37,12 @@ if ask_for_i == "i":
     clear()
     functions.start(user)
     while True:
+        ask = input(": ")
+        asks(ask)
         functions.money(user)
+        
+        
+        
 
 elif ask_for_i == "s":
     sleep(1)
@@ -34,5 +51,7 @@ elif ask_for_i == "s":
     clear()
     functions.start(user)
     while True:
+        ask = input(": ")
+        asks(ask)
         functions.money(user)
         
