@@ -9,25 +9,16 @@ def n(farm):
     farm += 1
     
 
-def game(user):
-    farms = 1
+def money(user):
     mmoney = 0
     while True:
         mmoney += 100
         money = mmoney
-        print(f"{user}님의 자산")
-        print(f"농장: {farm}")
-        print(f"돈: {money}")
-        print("농장: 100원")
-        ask = input(": ")
-        if ask == n:
-            time.sleep(1)
-            n(farms)
-            farms += 1
-            farm = farms
+        f = open("money.txt", "w")
+        f.write(f"{user}님의 자산 \n 돈: {money}")
+        f.close()
         time.sleep(1)
-        os.system("clear")
-
+        
 
 
 
