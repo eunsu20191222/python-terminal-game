@@ -16,9 +16,15 @@ def game(user):
         print(f"농장: {farm}")
         print(f"돈: {money}")
         print("농장: 100원")
-        if money == 100:
-            farm + 1
-            money - 1
+        print("농장을 사려면 n를 눌러주세요")
+        print("게임을 나갈려면 g를 입력해 주세요")
+        ask = input(": ")
+        if ask == "n":
+            if money > 100:
+                farm += 1
+                money -= 100
+        elif ask == "g":
+            break
         time.sleep(1)
         os.system("clear")
 
