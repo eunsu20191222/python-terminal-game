@@ -18,6 +18,9 @@ def asks(ask):
         sleep(2)
         clear()
         functions.start(user)
+        ask = input(": ")
+        asks(ask)
+        functions.money(user)
 
 
 sleep(1)
@@ -38,7 +41,13 @@ if ask_for_i == "i":
     functions.start(user)
     while True:
         ask = input(": ")
-        asks(ask)
+        mmoney = 0
+        mmoney += 100
+        money = mmoney
+        f = open("money.txt", "w")
+        f.write(f"{user}님의 자산 \n 돈: {money}")
+        f.close()
+        time.sleep(1)
         functions.money(user)
         
         
